@@ -1,0 +1,42 @@
+body {
+    background-image: radial-gradient(#add8e6 5%, transparent 10%),
+        radial-gradient(#fafafa 5%, transparent 10%);
+    background-color: #ffb500;
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#wrapper {
+    background-color: rgba(255,255,255,.3);
+    border-radius: 5px;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.bg-grey {
+    background-color: #EEEEEE;
+    border-radius: 2px;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    min-height: 50px;
+}
+.overlay-filter {
+    -webkit-filter: opacity(.70);
+    filter: opacity(.70);
+    /* -webkit-filter: sepia(1);
+    filter: sepia(1); */
+}
+
+.btn-info {
+    position: absolute;
+    right: 5px;
+    top:5px;
+}
