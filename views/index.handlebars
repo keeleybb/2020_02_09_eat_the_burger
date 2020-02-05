@@ -1,0 +1,34 @@
+<h1>Eat the Burger</h1>
+
+<h2>Burgers that have been eaten</h2>
+{{#each burgers}}
+{{name}}
+{{/each}}
+<ul>
+
+    {{#each burgers}}
+    {{#if eaten}}
+    {{> eaten-block}}
+    {{/if}}
+    {{/each}}
+</ul>
+
+<h2>Uneaten Burgers</h2>
+
+<ul>
+    {{#each burgers}}
+    {{#unless eaten}}
+    {{> burger-block}}
+    {{/unless}}
+    {{/each}}
+</ul>
+
+<h2>Add a Burger</h2>
+<form class="create-form">
+
+    <div class="form-group">
+        <label for="burger">New Burger:</label>
+        <input type="text" id="burger" name="name">
+    </div>
+    <button type="submit">Submit</button>
+</form>
