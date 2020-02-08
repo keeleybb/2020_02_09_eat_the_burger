@@ -9,4 +9,4 @@ This fun application was created for a web development bootcamp using MySQL, Nod
 
 [Deployed App](https://arcane-spire-48480.herokuapp.com/)
 
-[Portfolio](https://arcane-spire-48480.herokuapp.com/) 
+[Portfolio](https://keeleybb.github.io/2020_01-04_Homework_Updated-Portfolio/) 
