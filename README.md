@@ -7,6 +7,6 @@ This fun application was created for a web development bootcamp using MySQL, Nod
 
 # Check it Out
 
-Deployed App: 
+[Deployed App](https://arcane-spire-48480.herokuapp.com/)
 
-Portfolio: 
+[Portfolio](https://arcane-spire-48480.herokuapp.com/) 
