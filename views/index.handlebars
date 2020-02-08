@@ -7,10 +7,9 @@
             </div>
         </div>
 
-
-        <div class="row mx-5 my-5">
-
-            <div class="col-6">
+        {{#if burgers}}
+        <div class="row mx-5 my-2">
+            <div class="col-md-6 col-sm-12">
                 <h2>Uneaten Burgers</h2>
                 <ul>
                     {{#each burgers}}
@@ -20,9 +19,9 @@
                     {{/each}}
                 </ul>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12">
+                <h2>Burgers Eaten</h2>
                 <ul>
-                    <h2>Burgers Eaten</h2>
                     {{#each burgers}}
                     {{#if eaten}}
                     {{> eaten-block}}
@@ -30,14 +29,14 @@
                     {{/each}}
                 </ul>
             </div>
-
         </div>
+        {{/if}}
         <div class="row">
-            <div class="col-4 mx-auto">
+            <div class="col-md-4 col-sm-12 mx-auto">
                 <h2>Add a Burger</h2>
                 <form class="create-form my-3">
 
-                    <div class="form-group">
+                    <div class="form-group text-center">
                         <label for="burger">New Burger:</label>
                         <input type="text" id="burger" name="name">
                         <button type="submit">Submit</button>
