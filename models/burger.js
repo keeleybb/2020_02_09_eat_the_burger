@@ -15,7 +15,12 @@ var burger = {
         orm.create("burgers", cols, vals, function (res) {
             cb(res);
         });
-    }
+    },
+    delete: function (cb) {
+        orm.delete("burgers", function (res) {
+            cb(res);
+        });
+    },
 };
 
 module.exports = burger;

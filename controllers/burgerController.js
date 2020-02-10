@@ -39,6 +39,14 @@ router.post("/api/burgers", function (req, res) {
     ], function (result) {
         res.json({ id: result.insertId });
     });
+
+});
+
+router.delete("/api/burgers", function (req, res) {
+    burger.delete(function (data) {
+
+        res.json(data);
+    });
 });
 
 module.exports = router;

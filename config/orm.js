@@ -80,7 +80,20 @@ var orm = {
 
             cb(result);
         });
+    },
+    delete: function (table, cb) {
+        var queryString = "DELETE FROM " + table;
+        queryString += " WHERE eaten = true;"
+        console.log(queryString);
+        connection.query(queryString, function (err, result) {
+            if (err) {
+                throw err;
+            }
+
+            cb(result);
+        });
     }
+
 }
 
 module.exports = orm;
